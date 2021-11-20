@@ -182,6 +182,7 @@
 				height:900px;
 				//background:cyan;
 				margin:0 auto;
+				position:relative;
 			}
 			#pimg img
 			{
@@ -191,8 +192,8 @@
 			.details
 			{
 				position:absolute;
-				bottom:0;
-				margin:0 0 0 100px;
+				top:0;
+				margin:350px 0 0 100px;
 			}
 			.details h1
 			{
@@ -200,7 +201,6 @@
 				font-family:helvetica;
 				font-size:50px;
 				word-spacing:10px;
-				
 			}
 			#divi
 			{
@@ -209,7 +209,7 @@
 				margin:0 auto;
 				//background:cyan;
 			}
-			#tree
+			.box
 			{
 				width:300px;
 				height:300px;
@@ -217,23 +217,14 @@
 				margin:100px;
 				float:left;
 			}
-			#tree img
+			.box img
 			{
 				height:100%;
 				width:100%;
 			}
-			#sea
+			.box img:hover
 			{
-				width:300px;
-				height:300px;
-				//background:red;
-				margin:100px;
-				float:left;
-			}
-			#sea img
-			{
-				height:100%;
-				width:100%;
+				transform:scale(1.2,1.2);
 			}
 			#footer1
 			{
@@ -308,24 +299,26 @@
 				border:solid 1px black;
 				border-radius:5px;
 			}
-			#footer2
+			#footerm
 			{
+				height:350px;
 				width:100%;
-				height:200px;
-				background:#333;
+				background:hsl(0, 0%, 20%);
 			}
-			#footer21
+			#footerm1
 			{
-				height:200px;
-				width:900px;
+				height:300px;
+				width:1520px;
+				background:cyan;
 				margin:0 auto;
-				//background:cyan;
+				padding:50px 0 0 0;
 			}
-			#footer211
+			.bbox
 			{
-				height:100px;
-				width:100px;
-				//background:red;
+				height:300px;
+				width:450px;
+				background:red;
+				margin:0 0 0 50px;
 				float:left;
 			}
 		</style>
@@ -372,11 +365,14 @@
 					</div>
 				</div>
 				<div id="divi">
-					<div id="tree">
-						<img src="ptree.jpg"/>
+					<div class="box">
+						<img src="ptree.png"/>
 					</div>
-					<div id="sea">
-						<img src="sea.jpg"/>
+					<div class="box">
+						<img src="sea.png"/>
+					</div>
+					<div class="box">
+						<img src="pollution.jpg"/>
 					</div>
 				</div>
 			</div>
@@ -393,9 +389,14 @@
 					</div>
 				</div>
 			</div>
-			<div id="footer2">
-				<div id="footer21">
-					<div id="footer211"></div>
+			<div id="footerm">
+				<div id="footerm1">
+					<div class="bbox">
+					</div>
+					<div class="bbox">
+					</div>
+					<div class="bbox">
+					</div>
 				</div>
 			</div>
 		</div>
