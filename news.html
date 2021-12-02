@@ -1,0 +1,437 @@
+<html>
+	<head>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Fuzzy+Bubbles&display=swap" rel="stylesheet">
+		<style type="text/css">
+			body
+			{
+				margin:0;
+			}
+			#mainarea
+			{
+				width:100%;
+				height:auto;
+			}
+			#top
+			{
+				height:50px;
+				background:#262626;
+				padding:0 0 0 50px;
+			}
+			#logo
+			{
+				height:50px;
+				width:50px;
+				float:left;
+			}
+			#logo img
+			{
+				padding:10px;
+				width:30px;
+				height:30px;
+			}
+			#name
+			{
+				width:110px;
+				height:50px;
+				float:left;
+			}
+			#name p
+			{
+				margin:0;
+				color:#fff;
+				padding:15px 0 0 5px;
+				font-family:helvetica,geneva,'arial';
+			}
+			#join
+			{
+				width:100px;
+				height:30px;
+				float:right;
+				margin:15px 100px 10px 10px;	
+			}
+			#join a:link, #join a:visited
+			{
+				font:80% bold arial,geneva,helvetica;
+				background:yellow;
+				color:#000;
+				text-decoration:none;
+				padding:8px 20px;
+			}
+			#join a:hover
+			{
+				font:80% bold arial,geneva,helvetica;
+				background:#FF7D28;
+				color:#fff;
+				text-decoration:none;
+				padding:8px 20px;
+			}
+			#join a:active
+			{
+				font:80% bold arial,geneva,helvetica;
+				background:#ff5b06;
+				color:#fff;
+				text-decoration:none;
+				padding:8px 20px;
+			}
+			#donate
+			{
+				width:100px;
+				height:30px;
+				float:right;
+				margin:15px 10px 10px 10px;	
+			}
+			#donate a:link, #donate a:visited
+			{
+				font:80% bold arial,geneva,helvetica;
+				background:#82C551;
+				color:#fff;
+				text-decoration:none;
+				padding:8px 20px;
+			}
+			#donate a:hover
+			{
+				font:80% arial,geneva,helvetica;
+				background:#FF7D28;
+				color:#fff;
+				text-decoration:none;
+				padding:8px 20px;
+			}
+			#donate a:active
+			{
+				font:80% bold arial,geneva,helvetica;
+				background:#FF5B06;
+				color:#000;
+				text-decoration:none;
+				padding:8px 20px;
+			}
+			#titlebar
+			{
+				height:100px;
+				width:100%;
+				background:#000;
+			}
+			#title
+			{
+				width:900px;
+				height:100px;
+				margin:0 auto;
+			}
+			#title h1
+			{
+				margin:0;
+				color:#fff;
+				padding:20px 0 0 5px;
+				font:350% courier;
+			}
+			#menu
+			{
+				height:40px;
+				width:100%;
+				background:#fff;
+				position:sticky;
+				top:0;
+				z-index:100;
+			}
+			#menuc
+			{
+				height:40px;
+				width:720px;
+				margin:0 auto;
+				background:#fff;
+			}
+			#menuc ul
+			{
+				list-style:none;
+				margin:0;
+				padding:0;
+				z-index:100;
+			}
+			#menuc ul li
+			{
+				float:left;
+			}
+			#menuc ul li a:link, #menuc ul li a:visited
+			{
+				font-family:helvetica;
+				text-decoration:none;
+				color:#000;
+				display:block;
+				background:#fff;
+				padding:10px 20px;
+				font-weight:500;
+			}
+			#menuc ul li a:hover
+			{
+				font-family:helvetica;
+				text-decoration:none;
+				color:#000;
+				display:block;
+				background-image:linear-gradient(to bottom, #fff, #999);
+				padding:10px 20px;
+				font-weight:500
+			}
+			#main
+			{
+				width:100%;
+				height:1450px;
+				background:#222;
+			}
+			.mvarea
+			{
+				width:1518px;
+				height:284.625px;
+				margin:0 auto;
+				padding:0;
+			}
+			.varea
+			{
+				width:506px;
+				height:284.625px;
+5				margin:0;
+				padding:0;
+				background:lime; 
+				overflow:hidden;
+				float:left;
+			}
+			.varea video
+			{
+				transition:transform 2s;
+			}
+			.varea video:hover
+			{
+				transform:scale(1.1,1.1);
+			}
+			#quote
+			{
+				width:450px;
+				height:350px;
+				margin:0 auto;
+			}
+			#quote h1
+			{
+				font-size:50px;
+				color:lime;
+				text-align:left;
+			}
+			#quote h1 p
+			{
+				font-size:100px;
+				margin:0;
+				padding:0;
+			}
+			#nums
+			{
+				width:1500px;
+				height:450px;
+				margin:20px auto;
+			}
+			#nums p
+			{
+				text-align: justify;
+				color:#fff;
+				font-size: 25px;
+				font-family: 'Dancing Script', cursive;
+				font-family: 'Fuzzy Bubbles', cursive;		
+			}
+			#footerm
+			{
+				height:350px;
+				width:100%;
+				background:hsl(0, 0%, 20%);
+			}
+			#footerm1
+			{
+				height:275px;
+				width:1520px;
+				margin:0 auto;
+				padding:25px 0 0 0;
+			}
+			.bbox
+			{
+				height:250px;
+				width:450px;
+				margin:0 0 0 25px;
+				float:left;
+			}
+			.ob
+			{
+				width:300px;
+				height:85px;
+				margin-left:100px;
+			}
+			.ob img
+			{
+				height:100%;
+				width:100%;
+			}
+			.bbox p
+			{
+				font-family:arial;
+				color:#8a8a8a;
+				text-align:justify;
+				padding:0 0 0 20px;
+				border-left:1px #8a8a8a solid;
+			}
+			.bbox ul
+			{
+				list-style-type:none;
+			}
+			.bbox ul li a:link, .bbox ul li a:visited
+			{
+				font-family:arial;
+				font-size:20px;
+				color:#8a8a8a;
+				text-align:justify;
+				padding:2.5px 0 2.5px 20px;
+				display:block;
+				border-left:1px #8a8a8a solid;
+				font-weight:500;
+				text-decoration:none;
+				transition:transform 1s;
+			}
+			.bbox ul li a:hover
+			{
+				font-family:arial;
+				color:#8a8a8a;
+				text-align:justify;
+				padding:2.5px 0 2.5px 20px;
+				border-left:1px #8a8a8a solid;
+				font-weight:500;
+				text-decoration:none;
+				transform:translatex(5px);
+			}
+			#lf
+			{
+				width:1520px;
+				height:50px;
+				margin:0 auto;
+				border-top:1px #8a8a8a solid;
+			}
+			#lf p
+			{
+				width:100%;
+				font-family:arial;
+				color:#8a8a8a;
+				text-align:center;
+				padding:0 0 0 20px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="mainarea">
+			<div id="top">
+				<div id="logo">
+					<img src="logo.png"/>
+				</div>
+				<div id="name">
+					<p><b>carefor</b><font color="lime">nature</font></p>
+				</div>
+				<div id="join">
+					<a href="#"><b>JOIN US</b></a>
+				</div>
+				<div id="donate">
+					<a href="#"><b>DONATE</b></a>
+				</div>
+			</div>
+			<div id="titlebar">
+				<div id="title">
+					<h1 align="center">NAYAN CARES <font color="lime">FOUNDATION</font></h1>
+				</div>
+			</div>
+			<div id="menu">
+				<div id="menuc">
+					<ul>
+						<li><a href="index.html">HOME</a></li>
+						<li><a href="features.html">FEATURES</a></li>
+						<li><a href="about.html">ABOUT US</a></li>
+						<li><a href="cause.html">OUR CAUSES</a></li>
+						<li><a href="news.html"><font color="lime">NEWS</font></a></li>
+						<li><a href="contact.html">CONTACT US</a></li>
+					</ul>
+				</div>
+			</div>
+			<div id="main">
+				<div class="mvarea">
+					<div class="varea">
+						<video width="100%" height="100%" autoplay muted>
+							<source src="tree.mp4" type="video/mp4"/>
+						</video>
+					</div>
+					<div class="varea">
+						<video width="100%" height="100%" autoplay muted>
+							<source src="air.mp4" type="video/mp4"/>
+						</video>
+					</div>
+					<div class="varea">
+						<video width="100%" height="100%" autoplay muted>
+							<source src="sea.mp4" type="video/mp4"/>
+						</video>
+					</div>
+				</div>
+				<div class="mvarea">
+					<div class="varea">
+						<video width="100%" height="100%" autoplay muted>
+							<source src="sea.mp4" type="video/mp4"/>
+						</video>
+					</div>
+					<div class="varea">
+						<video width="100%" height="100%" autoplay muted>
+							<source src="tree.mp4" type="video/mp4"/>
+						</video>
+					</div>
+					<div class="varea">
+						<video width="100%" height="100%" autoplay muted>
+							<source src="air.mp4" type="video/mp4"/>
+						</video>
+					</div>
+				</div>
+				<div id="quote">
+					<h1>"Be the part of <p>solution,</p> not the<p>pollution"</p></h1>
+				</div>
+				<div id="nums">
+					<p>An average household generates about 20kg of dust a year, of which 6kg consist of microplastics. Every time we wash our synthetic clothes, 9,000,000 plastic microfibers are released per laundry.Microfibers have been found in tap water as well as bottled water. 35% of primary microplastics in the ocean come solely from the laundry of synthetic textiles. We ingest more plastic through household dust from textiles than through mussel consumption.
+						Know your clothes! Natural fabrics are made of animal or plant-based fibers, while synthetic yarn is man-made and produced from chemicals.
+						62% of our clothing consists of synthetic materials or a mix of natural & synthetic.
+						Blends like cotton & polyester release fewer microfibers than 100% polyester.
+						Wearing polyester clothes releases as many microplastic fibers in the air as through washing.
+						Microfibers also come from textiles such as carpets, curtains, blankets, and other household items.
+						Plastic fibers have been found in the sediment surrounding beaches, mangroves, in Arctic ice, at the top of the Himalayas, and in the deepest point of the ocean.
+						Plastic microfibers have been found in fish in markets, wild fish, farmed & wild mussels, chicken, sea salt and even beer and honey.
+						Because of friction, microfibers are released from synthetic textiles and end up in the air or in the water through washing.
+						We are breathing in microfibers, most probably at a rate of 11 microplastics per hour.
+						Synthetic material production has increased from 20% of the market to 60%; from 9,000,000 tons a year to 63,200,000 tons.</p>
+				</div>
+			</div>
+			<div id="footerm">
+				<div id="footerm1">
+					<div class="bbox">
+						<div class="ob">
+							<img src="op.jpg"/>
+						</div>
+						<ul>
+							<li><a href="#" target="_blank">ATULYASEVASANSTHAN</a></li>
+							<li><a href="#" target="_blank">UJJWALVIKASHYOJNA</a></li>
+							<li><a href="#" target="_blank">SHUBHAMELECTRONICS</a></li>
+							<li><a href="#" target="_blank">JAISWALENTERPRISES</a></li>
+							<li><a href="#" target="_blank">GAURAVZONE</a></li>
+						</ul>
+						
+					</div>
+					<div class="bbox">
+						<div class="ob"><img src="ob.jpg"/></div>
+						<p>Every member of N.C.F. (Nayan Cares Foundation) believes that we can help a lot by donating just a little. We are committed to doing what is necessary, not only what is considered politically feasible, to preserve rainforests, protect the climate, and uphold human rights.<br><br>The number of people who have taken action with us on our campaigns is enormous. So join us, too!</p>
+					</div>
+					<div class="bbox">
+						<div class="ob"><img src="opr.jpg"/></div>
+						<p>We assure that all the money funded to us will be used for the betterment of society and the transaction is secured by 20th century fox, so we request everyone to take part in this noble cause and help the nature to heal. The more you donate the better world you will make for yourself.<br><br>The number of people who have taken action with us on our campaigns is enormous. So join us, too!</p>
+					</div>
+				</div>
+				<div id="lf">
+					<p><font color="lime">ThemeOZ</font> © 2021 All Rights Reserved.</p>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
